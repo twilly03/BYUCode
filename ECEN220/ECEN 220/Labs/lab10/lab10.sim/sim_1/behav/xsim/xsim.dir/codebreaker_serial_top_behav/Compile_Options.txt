@@ -1,0 +1,1 @@
+-wto "5346b2323ba84b3d9dd75e6c8944317a" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "codebreaker_serial_top_behav" "xil_defaultlib.codebreaker_serial_top" "xil_defaultlib.glbl" -log "elaborate.log" 

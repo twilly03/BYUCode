@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/auto/fsg/twillis0/Downloads/SevenSegmentControl.sv,1666732583,systemVerilog,,/auto/fsg/twillis0/ECEN 220/Labs/lab8/lab8.srcs/sources_1/new/debouncer.sv,,SevenSegmentControl,,,,,,,,
+/auto/fsg/twillis0/Downloads/tb_debounce.v,1667342969,verilog,,,,tb_debounce,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab8/lab8.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab8/lab8.srcs/sources_1/new/debounce_top.sv,1667350740,systemVerilog,,,,debounce_top,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab8/lab8.srcs/sources_1/new/debouncer.sv,1667349631,systemVerilog,,/auto/fsg/twillis0/ECEN 220/Labs/lab8/lab8.srcs/sources_1/new/debounce_top.sv,,debouncer,,,,,,,,

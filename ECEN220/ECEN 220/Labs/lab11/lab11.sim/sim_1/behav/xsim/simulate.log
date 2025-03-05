@@ -1,0 +1,29 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*** Start of Simulation ***
+Testbench is getting ready to send 0xff at time 230 ns
+   Serially received data byte 0xff at time 495061 ns
+   Testbench is done serially transmitting byte 0xff at time 573151 ns
+Testbench is getting ready to send 0x0 at time 574150 ns
+   Serially received data byte 0x0 at time 1068981 ns
+   Testbench is done serially transmitting byte 0x00 at time 1147071 ns
+Testbench is getting ready to send 0xf at time 1148070 ns
+   Serially received data byte 0xf at time 1642901 ns
+   Testbench is done serially transmitting byte 0x0f at time 1720991 ns
+Testbench is getting ready to send 0xf0 at time 1721990 ns
+   Serially received data byte 0xf0 at time 2216821 ns
+   Testbench is done serially transmitting byte 0xf0 at time 2294911 ns
+Testbench is getting ready to send 0x37 at time 2295910 ns
+   Serially received data byte 0x37 at time 2790741 ns
+   Testbench is done serially transmitting byte 0x37 at time 2868831 ns
+Testbench is getting ready to send 0x73 at time 2869830 ns
+   Serially received data byte 0x73 at time 3364661 ns
+   Testbench is done serially transmitting byte 0x73 at time 3442751 ns
+Testbench is getting ready to send 0xaa at time 3443750 ns
+   Serially received data byte 0xaa at time 3938581 ns
+   Testbench is done serially transmitting byte 0xaa at time 4016671 ns
+Testbench is getting ready to send 0x55 at time 4017670 ns
+   Serially received data byte 0x55 at time 4512501 ns
+   Testbench is done serially transmitting byte 0x55 at time 4590591 ns
+*** Simulation done with 0 errors at time 4590591 ns ***
+$finish called at time : 4590591 ns : File "/auto/fsg/twillis0/ECEN 220/Labs/lab11/lab11.srcs/sim_1/new/tb_rx.sv" Line 158

@@ -1,0 +1,53 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*** Start of Simulation ***
+Testbench is requesting sending of byte 0xff by driving 'send' high at time 1181 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 1181 ns
+   Signal 'sent' went high at time 574191 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 574191 ns
+   Signal 'sent' went low to complete handshake at time 574191 ns
+   Done sending byte 0xff at time 574200 ns
+Testbench is requesting sending of byte 0x00 by driving 'send' high at time 575251 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 575251 ns
+   Signal 'sent' went high at time 1148261 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 1148261 ns
+   Signal 'sent' went low to complete handshake at time 1148261 ns
+   Done sending byte 0x00 at time 1148270 ns
+Testbench is requesting sending of byte 0x0f by driving 'send' high at time 1149321 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 1149321 ns
+   Signal 'sent' went high at time 1722331 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 1722331 ns
+   Signal 'sent' went low to complete handshake at time 1722331 ns
+   Done sending byte 0x0f at time 1722340 ns
+Testbench is requesting sending of byte 0xf0 by driving 'send' high at time 1723391 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 1723391 ns
+   Signal 'sent' went high at time 2296401 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 2296401 ns
+   Signal 'sent' went low to complete handshake at time 2296401 ns
+   Done sending byte 0xf0 at time 2296410 ns
+Testbench is requesting sending of byte 0x37 by driving 'send' high at time 2297461 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 2297461 ns
+   Signal 'sent' went high at time 2870471 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 2870471 ns
+   Signal 'sent' went low to complete handshake at time 2870471 ns
+   Done sending byte 0x37 at time 2870480 ns
+Testbench is requesting sending of byte 0x73 by driving 'send' high at time 2871531 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 2871531 ns
+   Signal 'sent' went high at time 3444541 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 3444541 ns
+   Signal 'sent' went low to complete handshake at time 3444541 ns
+   Done sending byte 0x73 at time 3444550 ns
+Testbench is requesting sending of byte 0xaa by driving 'send' high at time 3445601 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 3445601 ns
+   Signal 'sent' went high at time 4018611 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 4018611 ns
+   Signal 'sent' went low to complete handshake at time 4018611 ns
+   Done sending byte 0xaa at time 4018620 ns
+Testbench is requesting sending of byte 0x55 by driving 'send' high at time 4019671 ns
+        and is now waiting for data to be transmitted and then handshaking signals to signal completion at time 4019671 ns
+   Signal 'sent' went high at time 4592681 ns
+   Testbench is driving 'send' low and is now waiting for 'sent' to go low... at time 4592681 ns
+   Signal 'sent' went low to complete handshake at time 4592681 ns
+   Done sending byte 0x55 at time 4592690 ns
+*** Simulation done with 0 errors at time 4592690 ns ***
+$finish called at time : 4592690 ns : File "/auto/fsg/twillis0/Downloads/tb_tx.sv" Line 213

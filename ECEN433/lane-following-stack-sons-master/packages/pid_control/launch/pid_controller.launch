@@ -1,0 +1,11 @@
+<launch>
+    <param name="/k_proportional" type="double" value="1" />
+    <param name="/k_integral" type="double" value="0.014" />
+    <param name="/k_derivative" type="double" value="1.74" />
+    <param name="/controller_ready" type="bool" value="true" />
+    <param name="/graph_ready" type="bool" value="true" />
+
+    <node pkg="pid_control" type="pid_controller.py" name="pid_controller"/>
+    <node pkg="test_pid_publisher" type="controls_graph.py" name="controls_graph"/>
+    <node pkg="test_pid_publisher" type="vehicle_dynamics.py" name="vehicle_dynamics"/>
+</launch>

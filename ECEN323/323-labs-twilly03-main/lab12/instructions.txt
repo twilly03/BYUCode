@@ -1,0 +1,40 @@
+ECEN 323 Lab #12 Project Instructions
+
+Name:Thomas Williams (twillis0)
+
+Title: <Paint>
+
+Instructions:
+This is a paint game. You will use the lower 7 switches to change which character is being drawn. With zero being a space. You will use the directional buttons to move the character around the screen. If switch 15 is high the character will be drawn in the previous space. If switch 15 is low the character will simply move around the screen without a trail. The center buttton resets the character to the starting point. 
+
+Custom characters:
+7a<-I created a sort of money looking symbol
+7b<-I created a cross symbol
+7c<-I created a kidney bean with a sprout coming out of the side
+7d<-I created a sort of superman logo
+7e<-I created a lightning bolt symbol
+7f<-I created a rocket ship blasting off
+
+
+Custom background: 
+I Just created a basic background with a top border and the word Paint, since my project is painting I didn't want to have a crazy background so you could paint on a black background that was as big as possible. 
+
+Procedures:
+PROCESS_BTNR
+PROCESS_BTNL
+PROCESS_BTNU
+PROCESS_BTND
+INCREMENT_P
+
+Buttons:
+Up<-Moves the character up
+Down<-Moves the character down
+Left<-Moves the character left
+Right<-moves the character right
+Center<-Resets the screen and moves the character to the starting point
+
+LEDs and 7 Segment Display:
+The seven segment display will display how many times you have moved the character on the screen. The LEDs will display the coordinates of the character. the upper 8 LEDS diaply the column number and the lower 8 LEDs display the row of the character.  
+
+Partner:
+No partner!

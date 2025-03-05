@@ -1,0 +1,59 @@
+What happens when starting the lane following demo:
+	-We see that there are new nodes above the /joy_node, including /virtual_joystick, and /camera_node. This makes sense because the robot will now be controlled by code, and will use the camera to make decisions and use the virtual joystick to steer it. We also have nodes like /lane_filter_node which presumably will filter all of the lanes the camera sees in order to safely drive on the road.
+
+Part IV step 3:
+Which topic did you use?
+	-I used /wheels_driver_node/wheels_cmd
+What message makes the wheels move straight?
+rostopic pub -1 /simba/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+vel_left: 0.1
+vel_right: 0.1"
+
+
+What message makes the wheels move stop?
+rostopic pub -1 /simba/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+vel_left: 0.0
+vel_right: 0.0"
+
+What message makes the wheels move right?
+rostopic pub -1 /simba/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+vel_left: 0.1
+vel_right: 0.0"
+
+What message makes the wheels move left?
+rostopic pub -1 /simba/wheels_driver_node/wheels_cmd duckietown_msgs/WheelsCmdStamped "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+vel_left: 0.0
+vel_right: 0.1"
+
+Part IV step 5:
+How do the two control topics change? 
+	-The two control topics do not change regardless of the current state of the robot, ie lane following, or manual control, but rather they continously write.
+Which topic is used when? 
+	-Each topic is only used when the FSM dictates, so for example if keybaord control is open and manual control is active then only "joy_mapper_node/car_cmd" will be able to publish to the wheels. But if lane following is active and runnning then only "lane_controller_node/car_cmd" will be able to publish to the wheels, despite potentially recieving input from the other node. 
+How does the fsm topic work within all of this? 
+	-When switching from manual control to the lane following demo, we found that the FSM switches from "NORMAL_JOYSTICK_CONTROL" to "LANE_FOLLOWING" which demonstrates the switch from manual to automaitc driving. 
+What do you think this "car_cmd_switch_node" does?
+	-The node acts on whichever command is given to it in order to move the car. This as stated previously is depending on the FSM and which node is actively publishing to the wheels. 
+
+
+

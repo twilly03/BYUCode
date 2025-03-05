@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find image_process)/launch/masking.launch"/>
+    <param name="/canny_lower" type="double" value="120" />
+    <param name="/canny_upper" type="double" value="300" />
+    <param name="/l2gradient" type="double" value="1.0" />
+    <param name="/rho" type="double" value="1" />
+    <param name="/theta" type="double" value="0.01745329252" />
+    <param name="/threshold" type="int" value="1" />
+    <param name="/min_line_length" type="double" value="0" />
+    <param name="/max_line_gap" type="double" value="0" />
+
+    <node pkg="image_process" type="houghlines.py" name="houghlines"/>
+    <node pkg="rqt_image_view" type="rqt_image_view" name="image_edges" args="/image_edges"/> 
+    <node pkg="rqt_image_view" type="rqt_image_view" name="image_lines_white" args="/image_lines_white"/> 
+    <node pkg="rqt_image_view" type="rqt_image_view" name="image_lines_yellow" args="/image_lines_yellow"/>  
+</launch>

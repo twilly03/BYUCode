@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Add8_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Add8" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1056891fs"></ZoomStartTime>
+      <ZoomEndTime time="1060622fs"></ZoomEndTime>
+      <Cursor1Time time="1060000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="131"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="array" fp_name="/Add8/a">
+      <obj_property name="ElementShortName">a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Add8/b">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/cin">
+      <obj_property name="ElementShortName">cin</obj_property>
+      <obj_property name="ObjectShortName">cin</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Add8/s">
+      <obj_property name="ElementShortName">s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/co">
+      <obj_property name="ElementShortName">co</obj_property>
+      <obj_property name="ObjectShortName">co</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c1">
+      <obj_property name="ElementShortName">c1</obj_property>
+      <obj_property name="ObjectShortName">c1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c2">
+      <obj_property name="ElementShortName">c2</obj_property>
+      <obj_property name="ObjectShortName">c2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c3">
+      <obj_property name="ElementShortName">c3</obj_property>
+      <obj_property name="ObjectShortName">c3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c4">
+      <obj_property name="ElementShortName">c4</obj_property>
+      <obj_property name="ObjectShortName">c4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c5">
+      <obj_property name="ElementShortName">c5</obj_property>
+      <obj_property name="ObjectShortName">c5</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c6">
+      <obj_property name="ElementShortName">c6</obj_property>
+      <obj_property name="ObjectShortName">c6</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Add8/c7">
+      <obj_property name="ElementShortName">c7</obj_property>
+      <obj_property name="ObjectShortName">c7</obj_property>
+   </wvobject>
+</wave_config>

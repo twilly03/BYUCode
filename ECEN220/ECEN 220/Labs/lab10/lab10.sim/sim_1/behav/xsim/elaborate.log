@@ -1,0 +1,27 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 5346b2323ba84b3d9dd75e6c8944317a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot codebreaker_serial_top_behav xil_defaultlib.codebreaker_serial_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/auto/fsg/twillis0/Downloads/CharDrawer_serial.sv" Line 3. Module CharDrawer_serial doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_generator
+Compiling module xil_defaultlib.tx
+Compiling module xil_defaultlib.CharDrawer_serial
+Compiling module xil_defaultlib.SevenSegmentControl
+Compiling module xil_defaultlib.mod_counter(width=20)
+Compiling module xil_defaultlib.mod_counter
+Compiling module xil_defaultlib.stopwatch
+Compiling module xil_defaultlib.dual_port_ram(ADDR_WIDTH=8,DATA_...
+Compiling module xil_defaultlib.decrypt_rc4
+Compiling module xil_defaultlib.Codebreaker
+Compiling module xil_defaultlib.codebreaker_serial_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot codebreaker_serial_top_behav

@@ -1,0 +1,7 @@
+<launch>
+    <group ns="lab5">
+        <node name="pidNode" pkg="lab5" type="pidNode.py"/>
+        <node pkg="test_pid_publisher" type="vehicle_dynamics.py" name="vehicle_dynamics"/>  
+        <node pkg="test_pid_publisher" type="controls_graph.py" name="controls_graph"/>  
+    </group>
+</launch>

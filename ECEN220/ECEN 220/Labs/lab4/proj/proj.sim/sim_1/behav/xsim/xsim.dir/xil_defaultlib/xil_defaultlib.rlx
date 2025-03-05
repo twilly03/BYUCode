@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/auto/fsg/twillis0/Downloads/tb_arithmetic.sv,1664323822,systemVerilog,,,,tb_arithmetic,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab4/proj/proj.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab4/proj/proj.srcs/sources_1/new/Add8.sv,1664318504,systemVerilog,,/auto/fsg/twillis0/ECEN 220/Labs/lab4/proj/proj.srcs/sources_1/new/FullAdd.sv,,Add8,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab4/proj/proj.srcs/sources_1/new/FullAdd.sv,1664315833,systemVerilog,,/auto/fsg/twillis0/ECEN 220/Labs/lab4/proj/proj.srcs/sources_1/new/arithmetic_top.sv,,FullAdd,,,,,,,,
+/auto/fsg/twillis0/ECEN 220/Labs/lab4/proj/proj.srcs/sources_1/new/arithmetic_top.sv,1664326200,systemVerilog,,/auto/fsg/twillis0/Downloads/tb_arithmetic.sv,,arithmetic_top,,,,,,,,

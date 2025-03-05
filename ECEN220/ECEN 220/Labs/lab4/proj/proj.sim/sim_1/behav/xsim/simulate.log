@@ -1,0 +1,5 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*** Starting simulation at time 20 ns ***
+*** Simulation done with 0 errors at time 5160 ns ***
+$finish called at time : 5160 ns : File "/auto/fsg/twillis0/Downloads/tb_arithmetic.sv" Line 74

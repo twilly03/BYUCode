@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../proj.srcs/sources_1/new/Add8.sv" \
+"../../../../proj.srcs/sources_1/new/FullAdd.sv" \
+"../../../../proj.srcs/sources_1/new/arithmetic_top.sv" \
+"../../../../../../../../Downloads/tb_arithmetic.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

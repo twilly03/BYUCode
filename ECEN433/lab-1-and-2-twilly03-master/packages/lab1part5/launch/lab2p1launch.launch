@@ -1,0 +1,13 @@
+<launch>
+
+  <group ns="turtlesim">
+   <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+  </group>
+  
+  <param name = "/direction_pub_rate" type = "double" value="5.0" />
+
+
+  <node pkg="lab1part5" name="lab1p5node" type="squarenode.py"/>
+  <node pkg="lab1part5" name="lab2p1node" type="squaresubscriber.py"/>
+  
+</launch>

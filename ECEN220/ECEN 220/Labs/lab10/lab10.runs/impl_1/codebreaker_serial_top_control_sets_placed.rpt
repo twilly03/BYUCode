@@ -1,0 +1,111 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Tue Nov 15 19:04:51 2022
+| Host         : DIGITAL-47 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_control_sets -verbose -file codebreaker_serial_top_control_sets_placed.rpt
+| Design       : codebreaker_serial_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    43 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |    20 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              41 |           14 |
+| Yes          | No                    | No                     |             160 |           51 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              77 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+--------------------------------------------------+------------------------------------------+------------------+----------------+
+|         Clock Signal        |                   Enable Signal                  |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-----------------------------+--------------------------------------------------+------------------------------------------+------------------+----------------+
+|  clk_generator_inst/clk_100 | CharDrawer_inst/TX/FSM_onehot_cs_reg[5]_0[0]     | btnu_IBUF                                |                3 |              4 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/msg_byte_idx[3]_i_2_n_4 | Codebreaker_inst/Decrypt/msg_byte_idx0_0 |                2 |              4 |
+|  clk_generator_inst/clk_100 | CharDrawer_inst/TX/E[0]                          | CharDrawer_inst/setCnt7_out              |                1 |              4 |
+|  clk_generator_inst/clk_100 | stopwatch_inst/n0/i_0                            | stopwatch_inst/m0/count[3]_i_1_n_4       |                1 |              4 |
+|  clk_generator_inst/clk_100 | stopwatch_inst/m0/E[0]                           | stopwatch_inst/m0/SR[0]                  |                1 |              4 |
+|  clk_generator_inst/clk_100 | stopwatch_inst/m1/E[0]                           | stopwatch_inst/m1/SR[0]                  |                1 |              4 |
+|  clk_generator_inst/clk_100 | stopwatch_inst/m2/E[0]                           | stopwatch_inst/m3/count[3]_i_1__1_n_4    |                2 |              4 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/cs[31]_i_1_n_4          | btnu_IBUF                                |                2 |              5 |
+|  clk_generator_inst/clk_100 |                                                  |                                          |                4 |              7 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/i[7]_i_1_n_4            |                                          |                4 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/j[7]_i_1_n_4            |                                          |                7 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[63]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[95]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[87]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[7]_i_1_n_4    |                                          |                4 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[79]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[71]_i_1_n_4   |                                          |                3 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[55]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[47]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[39]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[31]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[23]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[15]_i_1_n_4   |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[127]_i_1_n_4  |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[119]_i_1_n_4  |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[111]_i_1_n_4  |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/bytes_out[103]_i_1_n_4  |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/Sj_saved                |                                          |                2 |              8 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/Si_saved0               |                                          |                3 |              8 |
+|  clk_generator_inst/clk_100 |                                                  | CharDrawer_inst/TX/BRcounter[0]_i_1_n_4  |                4 |             13 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/stopwatch_run                   | stopwatch_inst/n0/count[0]_i_1_n_4       |                5 |             20 |
+|  clk_generator_inst/clk_100 | Codebreaker_inst/Decrypt/incKey3_out             | btnu_IBUF                                |                6 |             24 |
+|  clk_generator_inst/clk_100 |                                                  | btnu_IBUF                                |               10 |             28 |
++-----------------------------+--------------------------------------------------+------------------------------------------+------------------+----------------+
+
+

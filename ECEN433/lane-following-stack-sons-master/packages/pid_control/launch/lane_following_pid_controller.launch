@@ -1,0 +1,84 @@
+<launch>
+
+    <arg name="veh" default="$(env VEHICLE_NAME)"/>
+    <arg name="ai_trafo_mode" default="cb" doc="'cb' for colo balance only; 'both' for color balance and linear trafo"/>
+    <arg name="ai_interval" default="5" doc="interval with which the linear trafo gets updated. color balance is performed every second."/>
+    <arg name="verbose" default="false"/>
+
+    <!-- start Duckietown nodes -->
+    <arg name="demo_name" value="lane_following"/>
+
+    <include file="$(find led_emitter)/launch/led_emitter_node.launch"> 
+        <arg name="veh" value="$(env VEHICLE_NAME)"/> 
+    </include>
+    <!-- start basic args -->
+    <include file="$(find duckietown_demos)/launch/master.launch">
+
+        <!-- Basic arguments -->
+        <arg name="veh" value="$(arg veh)"/>
+        <arg name="demo_name" value="$(arg demo_name)"/>
+        <arg name="param_file_name" value="default" />
+        <arg name="visualization" value="true" />
+
+        <!-- Finite state machine -->
+        <arg name="fsm" value="true"/>
+        <arg name="/fsm/logic_gate" value="false"/>
+
+        <!-- Camera and anti intagram -->
+        <arg name="/camera/raw" value="false" />
+        <arg name="anti_instagram" value="true" />
+
+        <!-- Lane Following stack -->
+        <arg name="lane_following" value="true"/>
+        <arg name="/lane_following/line_detection" value="false"/>        
+        <arg name="line_detector_param_file_name" value="default" />
+        <arg name="/lane_following/ground_projection" value="true"/>
+        <arg name="/lane_following/lane_filter" value="true"/>
+        <arg name="/lane_following/lane_controller" value="false"/>
+    </include>
+
+    <group ns="$(env VEHICLE_NAME)">
+        <param name="/d_kp" type="double" value="1" />
+        <param name="/d_ki" type="double" value=".5" />
+        <param name="/d_kd" type="double" value="0" />
+        <param name="/d_error_threshold" type="double" value="0.5" />
+        <param name="/phi_kp" type="double" value="1" />
+        <param name="/phi_ki" type="double" value=".5" />
+        <param name="/phi_kd" type="double" value="0" />
+        <param name="/phi_error_threshold" type="double" value="0.5" />
+        <param name="/d_control" type="double" value="0" />
+        <param name="/phi_control" type="double" value="0" />
+        <param name="/max_control_output" type="double" value="20" />
+        <param name="/velocity" type="double" value="0.25" />
+        <param name="/max_control_velocity" type="double" value="0.5" />
+        <param name="/min_control_velocity" type="double" value="0.5" />
+        <node pkg="pid_control" type="lane_following_pid_controller.py" name="lane_following_pid_controller"/>
+
+        <param name="/white_hue_min" type="double" value="50" />
+        <param name="/white_hue_max" type="double" value="255" />
+        <param name="/white_sat_min" type="double" value="0" />
+        <param name="/white_sat_max" type="double" value="170" />
+        <param name="/white_val_min" type="double" value="195" />
+        <param name="/white_val_max" type="double" value="255" />
+        <param name="/yellow_hue_min" type="double" value="17.71" />
+        <param name="/yellow_hue_max" type="double" value="56.67" />
+        <param name="/yellow_sat_min" type="double" value="0" />
+        <param name="/yellow_sat_max" type="double" value="160" />
+        <param name="/yellow_val_min" type="double" value="130" />
+        <param name="/yellow_val_max" type="double" value="255" />
+        <param name="/erode_kernel_size" type="int" value="5" />
+        <param name="/erode_iterations" type="int" value="1" />
+        <param name="/dilate_kernel_size" type="int" value="11" />
+        <param name="/dilate_iterations" type="int" value="1" />
+        <param name="/canny_lower" type="double" value="120" />
+        <param name="/canny_upper" type="double" value="300" />
+        <param name="/l2gradient" type="double" value="1.0" />
+        <param name="/rho" type="double" value="1" />
+        <param name="/theta" type="double" value="0.01745329252" />
+        <param name="/threshold" type="int" value="1" />
+        <param name="/min_line_length" type="double" value="15" />
+        <param name="/max_line_gap" type="double" value="0.3" />
+        <node pkg="image_process" type="ground_projection_custom.py" name="ground_projection_custom"/>
+    </group>
+
+</launch>

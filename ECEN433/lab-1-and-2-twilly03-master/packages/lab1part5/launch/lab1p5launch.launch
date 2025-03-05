@@ -1,0 +1,9 @@
+<launch>
+
+  <group ns="turtlesim">
+   <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+  </group>
+  
+  <node pkg="lab1part5" name="lab1p5node" type="squarenode.py"/>
+  
+</launch>

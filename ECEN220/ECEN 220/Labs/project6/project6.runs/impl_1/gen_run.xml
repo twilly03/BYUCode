@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1666138604">
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Counter_Top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Counter_Top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Counter_Top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Counter_Top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Counter_Top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Counter_Top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Counter_Top_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Counter_Top_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Counter_Top_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="Counter_Top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Counter_Top_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Counter_Top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Counter_Top_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Counter_Top_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="Counter_Top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Counter_Top_routed_error.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Counter_Top_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Counter_Top_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Counter_Top_methodology_drc_routed.rpx"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Counter_Top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Counter_Top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Counter_Top_methodology_drc_routed.pb"/>
+  <File Type="PLACE-CTRL" Name="Counter_Top_control_sets_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Counter_Top_methodology_drc_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BIT" Name="Counter_Top.bit"/>
+  <File Type="BITSTR-MSK" Name="Counter_Top.msk"/>
+  <File Type="BITSTR-RBT" Name="Counter_Top.rbt"/>
+  <File Type="BITSTR-NKY" Name="Counter_Top.nky"/>
+  <File Type="BITSTR-BMM" Name="Counter_Top_bd.bmm"/>
+  <File Type="PDI-FILE" Name="Counter_Top.pdi"/>
+  <File Type="BITSTR-MMI" Name="Counter_Top.mmi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Counter_Top_postroute_physopt.dcp"/>
+  <File Type="BG-BGN" Name="Counter_Top.bgn"/>
+  <File Type="PLACE-DCP" Name="Counter_Top_placed.dcp"/>
+  <File Type="BG-BIN" Name="Counter_Top.bin"/>
+  <File Type="PWROPT-DCP" Name="Counter_Top_pwropt.dcp"/>
+  <File Type="RCFI_FILE" Name="Counter_Top.rcfi"/>
+  <File Type="RDI-RDI" Name="Counter_Top.vdi"/>
+  <File Type="BG-DRC" Name="Counter_Top.drc"/>
+  <File Type="OPT-DCP" Name="Counter_Top_opt.dcp"/>
+  <File Type="CFI_FILE" Name="Counter_Top.cfi"/>
+  <File Type="BITSTR-SYSDEF" Name="Counter_Top.sysdef"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Counter_Top_postroute_physopt_bb.dcp"/>
+  <File Type="NPI_FILE" Name="Counter_Top.npi"/>
+  <File Type="RNPI_FILE" Name="Counter_Top.rnpi"/>
+  <File Type="BITSTR-LTX" Name="Counter_Top.ltx"/>
+  <File Type="RBD_FILE" Name="Counter_Top.rbd"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Counter_Top_bus_skew_routed.rpx"/>
+  <File Type="OPT-DRC" Name="Counter_Top_drc_opted.rpt"/>
+  <File Type="PLACE-UTIL" Name="Counter_Top_utilization_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="Counter_Top.hwdef"/>
+  <File Type="PA-TCL" Name="Counter_Top.tcl"/>
+  <File Type="REPORTS-TCL" Name="Counter_Top_reports.tcl"/>
+  <File Type="PLACE-IO" Name="Counter_Top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Counter_Top_utilization_placed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Counter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab5/proj/proj.srcs/sources_1/new/seven_segment.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Counter_Top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FunRegister4.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FunRegister.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Counter_Top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

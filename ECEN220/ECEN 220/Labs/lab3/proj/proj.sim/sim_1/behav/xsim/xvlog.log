@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/auto/fsg/twillis0/ECEN 220/Labs/lab3/temp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourFunctions
+INFO: [VRFC 10-2263] Analyzing Verilog file "/auto/fsg/twillis0/ECEN 220/Labs/lab3/proj/proj.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

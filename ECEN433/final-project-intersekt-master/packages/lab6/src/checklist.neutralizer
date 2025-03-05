@@ -1,0 +1,42 @@
+Project #1 – Intersection Handling
+Requirements
+1. Detect Intersection & Stop at Red Line
+
+
+2. Read April Tag to Determine Intersection Type
+
+
+3. Select Valid Turn Type (Left, Straight, or Right) & Execute Turn
+
+
+4. Add Capability to Detect Car Direction in Front (In Your Lane) and Wait
+
+
+5. Add Turn Signals
+
+
+Currently Being Implemented:
+StopLaneFilterNode (lab6)
+StopAtRed (lab6)
+
+Currently lab4/src/combined.py is modified so only white and yellow segments are published to line_segment_list 
+and red segments are published to red_segment_list. However, the lines are being visualized in 
+ground_projection_node/debug/ground_projection_image/compressed so we might need to create another similar node
+that will take the red_segment_list and publish it.
+
+Useful Links:
+https://docs.ros.org/en/api/apriltag_ros/html/msg/AprilTagDetectionArray.html
+https://docs.ros.org/en/noetic/api/apriltag_ros/html/msg/AprilTagDetection.html
+https://samuelfneumann.github.io/posts/duckie_4/
+
+
+12/4/24
+Locked the state when we stop at a red line so we don't read any more red lines until after the turn for 1 second using timer
+Made a modified april tag detector node to only get the top right corner of the image
+    ******^In order to implement the node, go into apriltag_reader.py and change subscription topic from 'apriltag_detector_node/detections' to 
+    'apriltag_detector_modified_node/detections' 
+Implemented an enable control for the april tag reader
+    This allows us to turn on the reader at the stop sign and turn it off after we start moving
+    potential issues are callbackSignDetection updating self.signID during determination of intersection type and
+    constant/too many callbacks  
+Finalized code to determine the available movements used in movement state

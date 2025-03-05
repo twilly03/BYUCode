@@ -1,0 +1,22 @@
+# global class .gitignore file
+
+# Vivado ignores
+vivado*.jou
+vivado*.log
+vivado_pid*.str
+xvlog.log
+xvlog.pb
+webtalk*.jou
+webtalk*.log
+xsim*.jou
+.Xil/*
+xsim.dir/*
+xelab.pb
+
+# pycache
+**/__pycache__/*
+
+# Passoff test directory
+**/passoff_temp_dir/*
+
+# Add you own repository specific ignores below this line

@@ -1,0 +1,4 @@
+<launch>
+    <node name="odom_graph" pkg="odometry" type="odom_graph.py"/>
+    <node name="robot_calc_node" pkg="odometry" type="robot_calc_node.py"/>
+</launch>

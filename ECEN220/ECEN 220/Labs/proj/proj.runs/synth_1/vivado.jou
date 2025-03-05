@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Oct 11 19:07:17 2022
+# Process ID: 8510
+# Current directory: /auto/fsg/twillis0/ECEN 220/Labs/proj/proj.runs/synth_1
+# Command line: vivado -log seven_segment_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seven_segment_top.tcl
+# Log file: /auto/fsg/twillis0/ECEN 220/Labs/proj/proj.runs/synth_1/seven_segment_top.vds
+# Journal file: /auto/fsg/twillis0/ECEN 220/Labs/proj/proj.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source seven_segment_top.tcl -notrace

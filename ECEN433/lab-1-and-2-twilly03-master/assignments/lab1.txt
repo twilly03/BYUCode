@@ -1,0 +1,10 @@
+1. List the names of the topics that interact 
+with the turtlesim node (pubslishers or subscribers)
+
+publishers:
+color_sensor
+pose
+
+subscribers:
+cmd_vel
+
